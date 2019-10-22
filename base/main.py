@@ -5,20 +5,6 @@
  " @date       22/10/2019
 """
 
-"""
-import os.path
-import importlib.machinery
-
-
-def require(file, module='lib'):
-    __NAME__ = file
-    __PATH__ = os.path.dirname(os.path.abspath(__file__)) + os.path.sep
-    loader = importlib.machinery.SourceFileLoader(module, __PATH__ + __NAME__)
-    return loader.load_module(module)
-
-
-lib = require('lib/ks_base.py')
-"""
 from lib.ks_base import switch
 
 class MyController:
