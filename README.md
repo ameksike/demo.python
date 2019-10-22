@@ -5,7 +5,7 @@ This repository contains a list of demonstration applications. The demo applicat
 
 ------------------------------------------------------------------
 ------------------------------------------------------------------
-For used offline repository for Python
+For used a Python Offline Repository 
 ------------------------------------------------------------------
 	-------------------------------------------------------------- Online PC
 	pip download -d <repository-directory> <package-name>
