@@ -16,5 +16,3 @@ def switch(key, scope, default="Default", prefix="case"):
             pass
     if type(method).__name__ == 'method':
         return method()
-
-

@@ -5,7 +5,7 @@
  " @date       22/10/2019
 """
 
-"""
+
 import os.path
 import importlib.machinery
 
@@ -18,8 +18,6 @@ def require(file, module='lib'):
 
 
 lib = require('lib/ks_base.py')
-"""
-from lib.ks_base import switch
 
 class MyController:
 
@@ -40,7 +38,7 @@ class MyController:
 
     def myAcction(self):
         option = "Test-1"
-        switch(option, self)
+        lib.switch(option, self)
 
 
 # .................................................................
