@@ -4,6 +4,9 @@
  " @email      tonykssa@gmail.com
  " @date       22/10/2019
 """
+import sys, os
+__LIBPATH__ = "../"
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + os.path.sep + __LIBPATH__)
 
 from lib.ks_base import switch
 
