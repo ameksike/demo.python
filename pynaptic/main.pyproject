@@ -1,0 +1,11 @@
+{
+    "files": [
+        "main.py",
+        "plugin/main/view/mainwindow.ui",
+        "plugin/main/view/MainView.py",
+        "plugin/main/view/mainwindow_ui.py",
+        "plugin/main/controller/MainController.py",
+        "plugin/main/MainPlugin.py",
+        "plugin/main/model/RepoModel.py"
+    ]
+}
