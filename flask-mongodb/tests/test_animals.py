@@ -1,6 +1,6 @@
 import pytest
 import json
-from app import app
+from src.app import app
 
 def test_get_animals(client):
     response = client.get('/api/animals')

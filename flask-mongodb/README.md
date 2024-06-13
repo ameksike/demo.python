@@ -2,7 +2,7 @@
 ### Run 
 - docker-compose up
 - mongodb://root:pass@localhost:27017/admin
-- http://localhost:5000/animals
+- http://localhost:5000/api/animals
 - pytest
 
 ### Service MongoDB
