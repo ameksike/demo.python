@@ -1,6 +1,9 @@
 # Demo Python Projects 
 This repository contains a list of demonstration applications. The demo applications have as a common factor the use of technologies based on Python. Note that most of the published code is for academic purposes.
 
+### Reference
+- [SQLAlchemy in Flask](https://flask.palletsprojects.com/en/2.3.x/patterns/sqlalchemy/)
+
 ### Similar projects 
 + [Prototype: Fraud Detection System](https://github.com/ameksike/kdd.fraud.detection.system)
 + [Prototype: SDK](https://github.com/ameksike/tropipy)
@@ -13,7 +16,6 @@ This repository contains a list of demonstration applications. The demo applicat
 + [CLI: Shell scripts focused on Command Line Interface ](https://github.com/ameksike/demo.cli)
 + [Maps: Demo applications focused on Geographic Information Systems (GIS)](https://github.com/ameksike/demo.map)
 + [Service: Demo applications focused on create Services ](https://github.com/ameksike/demo.service)
-
 
 
 ### For used a Python Offline Repository 
