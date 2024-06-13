@@ -1,0 +1,31 @@
+version: "3.7"
+services:
+  app:
+    build: .
+    command: python -u src/app.py
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    links:
+      - mongodb
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    hostname: host_mongodb
+    environment:
+      - MONGO_INITDB_DATABASE=storage
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=pass
+    volumes:
+      - ./db/init-db.js:/docker-entrypoint-initdb.d/init-db.js:ro
+      - ./tmp/mongodb:/data/db
+    ports:
+      - 27017:27017
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
