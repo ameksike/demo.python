@@ -9,6 +9,11 @@ services:
       - .:/app
     links:
       - mongodb
+    environment:
+      - MONGO_INITDB_HOST=host_mongodb
+      - MONGO_INITDB_DATABASE=storage
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=pass
 
   mongodb:
     container_name: mongodb
