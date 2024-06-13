@@ -17,14 +17,6 @@ class RedisCache:
     def delete(self, key):
         self.cache.delete(key)
 
-
-def redisCache(app):
-    return Cache(app, config={
-        'CACHE_TYPE': 'redis',
-        'CACHE_REDIS_URL': os.getenv('CACHE_REDIS_URL')
-    })
-
-
 class SimpleCache:
     def __init__(self, app=None):
         self.cache = Cache()

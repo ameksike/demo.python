@@ -1,7 +1,6 @@
 import time
 from flask import Blueprint, jsonify, request
 from services.cache import simple_cache
-#from app import cache 
 
 group_bp = Blueprint('group_bp', __name__)
 
