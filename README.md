@@ -2,6 +2,7 @@
 This repository contains a list of demonstration applications. The demo applications have as a common factor the use of technologies based on Python. Note that most of the published code is for academic purposes.
 
 ### Reference
+- [Dependency Injection](https://github.com/ameksike/dev.resume/blob/main/demos/python/di.md)
 - [SQLAlchemy in Flask](https://flask.palletsprojects.com/en/2.3.x/patterns/sqlalchemy/)
 - [SQLAlchemy in FastAPI](https://fastapi.tiangolo.com/tutorial/sql-databases/)
 - [django: Making queries](https://docs.djangoproject.com/en/5.0/topics/db/queries/)
