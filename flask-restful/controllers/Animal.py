@@ -1,9 +1,6 @@
-animals = {
-    1: {"name": "Lion", "species": "Panthera leo"},
-    2: {"name": "Tiger", "species": "Panthera tigris"},
-    3: {"name": "Elephant", "species": "Loxodonta africana"}
-}
+
 from flask_restful import Resource, reqparse
+from models.animals import animals
 
 class Animal(Resource):
     def get(self, animal_id):
@@ -25,5 +22,20 @@ class Animal(Resource):
         parser.add_argument('name', required=True, help="Name cannot be blank!")
         parser.add_argument('species', required=True, help="Species cannot be blank!")
         args = parser.parse_args()
+        animals[animal_id] = {"name": args['name'], "species": args['species']}
+        return animals[animal_id], 201
+
+# Recurso para la lista de animales
+class AnimalList(Resource):
+    def get(self):
+        return animals
+
+    def post(self):
+        parser = reqparse.RequestParser()
+        parser.add_argument('name', required=True, help="Name cannot be blank!")
+        parser.add_argument('species', required=True, help="Species cannot be blank!")
+        args = parser.parse_args()
+
+        animal_id = max(animals.keys()) + 1 if animals else 1
         animals[animal_id] = {"name": args['name'], "species": args['species']}
         return animals[animal_id], 201
