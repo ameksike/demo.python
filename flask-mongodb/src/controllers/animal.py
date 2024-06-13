@@ -7,7 +7,7 @@ from services.db import delDb
 animal_bp = Blueprint('animal_bp', __name__)
 
 @animal_bp.route('/animals')
-def list_animals():
+def _list():
     db=""
     try:
         collection = getDb().animal
@@ -28,7 +28,7 @@ def list_animals():
         delDb(db)
 
 @animal_bp.route('/animals/<int:id>', methods=['GET'])
-def select_animal(id):
+def _select(id):
     try:
         # _id = ObjectId(id) 
         collection = getDb().animal
@@ -47,7 +47,7 @@ def select_animal(id):
         return jsonify({'error': 'An error occurred', 'message': str(e)}), 500
 
 @animal_bp.route('/animals', methods=['POST'])
-def insert_animal():
+def _insert():
     try:
         # _id = ObjectId(id) 
         item = request.json
@@ -58,7 +58,7 @@ def insert_animal():
         return jsonify({'error': 'An error occurred', 'message': str(e)}), 500
 
 @animal_bp.route('/animals/<id>', methods=['PUT'])
-def update_item(id):
+def _update(id):
     try:
         # _id = ObjectId(id) 
         collection = getDb().animal
@@ -74,7 +74,7 @@ def update_item(id):
         return jsonify({'error': 'An error occurred', 'message': str(e)}), 500
 
 @animal_bp.route('/animals/<id>', methods=['DELETE'])
-def delete_item(id):
+def _delete(id):
     try:
         # item_id = ObjectId(id)
         collection = getDb().animal
