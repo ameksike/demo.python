@@ -3,6 +3,8 @@ This repository contains a list of demonstration applications. The demo applicat
 
 ### Reference
 - [SQLAlchemy in Flask](https://flask.palletsprojects.com/en/2.3.x/patterns/sqlalchemy/)
+- [SQLAlchemy in FastAPI](https://fastapi.tiangolo.com/tutorial/sql-databases/)
+- [django: Making queries](https://docs.djangoproject.com/en/5.0/topics/db/queries/)
 
 ### Similar projects 
 + [Prototype: Fraud Detection System](https://github.com/ameksike/kdd.fraud.detection.system)
