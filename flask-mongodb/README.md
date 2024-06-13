@@ -13,6 +13,7 @@
 - docker-compose stop redis
 
 ### Service API
+- docker-compose up --force-recreate --build app
 - docker-compose up -d app
 - docker-compose stop app
 - docker logs flask-mongodb-app-1 -f
