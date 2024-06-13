@@ -16,5 +16,9 @@ redis_cache.init(app)
 app.register_blueprint(animal_bp, url_prefix='/api')
 app.register_blueprint(group_bp, url_prefix='/api')
 
+@app.route('/')
+def home():
+    return 'FASK_API', 200
+
 if __name__=='__main__':
     app.run(host="0.0.0.0", port=5000)

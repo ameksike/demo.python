@@ -3,3 +3,5 @@ pymongo
 redis
 flask_caching
 python-dotenv
+pytest 
+requests
