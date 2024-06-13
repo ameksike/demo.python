@@ -1,6 +1,6 @@
 
 from flask_restful import Resource, reqparse
-from models.animals import animals
+from src.models.animals import animals
 
 class Animal(Resource):
     def get(self, animal_id):
