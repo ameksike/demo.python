@@ -2,6 +2,8 @@
 This repository contains a list of demonstration applications. The demo applications have as a common factor the use of technologies based on Python. Note that most of the published code is for academic purposes.
 
 ### Similar projects 
++ [Prototype: Fraud Detection System](https://github.com/ameksike/kdd.fraud.detection.system)
++ [Prototype: SDK](https://github.com/ameksike/tropipy)
 + [JavaScript: Demo applications written in JavaScript ](https://github.com/ameksike/demo.javascript)
 + [PHP: Demo applications written in PHP ](https://github.com/ameksike/demo.php)
 + [Python: Demo applications written in Python ](https://github.com/ameksike/demo.python)
