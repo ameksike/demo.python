@@ -9,11 +9,8 @@ services:
       - .:/app
     links:
       - mongodb
-    environment:
-      - MONGO_INITDB_HOST=host_mongodb
-      - MONGO_INITDB_DATABASE=storage
-      - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=pass
+    env_file:
+      - .env
 
   mongodb:
     container_name: mongodb
@@ -21,8 +18,8 @@ services:
     hostname: host_mongodb
     environment:
       - MONGO_INITDB_DATABASE=storage
-      - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=pass
+    env_file:
+      - .env
     volumes:
       - ./db/init-db.js:/docker-entrypoint-initdb.d/init-db.js:ro
       - ./tmp/mongodb:/data/db
