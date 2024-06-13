@@ -1,8 +1,7 @@
 from flask import Blueprint, jsonify, request
 from bson.objectid import ObjectId
 from bson.errors import InvalidId
-from services.db import getDb
-from services.db import delDb
+from services.mongodb import getDb, delDb
 
 animal_bp = Blueprint('animal_bp', __name__)
 
